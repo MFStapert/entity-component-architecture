@@ -15,12 +15,12 @@ export class Enemy extends Entity {
 }
 
 class EnemyComponent extends Component {
-    public update(): void {
-        this.parent
-            .getComponent<LocationComponent>(LocationComponent)
-            .updateLocation({
-                x: Math.random() * 800,
-                y: Math.random() * 600
-            });
+    protected tick(): void {
+        // this.parent
+        //     .getComponent<LocationComponent>(LocationComponent)
+        //     .updateLocation({
+        //         x: Math.random() * 800,
+        //         y: Math.random() * 600
+        //     });
     }
 }

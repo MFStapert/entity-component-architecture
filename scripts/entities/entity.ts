@@ -3,8 +3,8 @@ import { Component } from '../components/component';
 export abstract class Entity {
     private components: Component[] = [];
 
-    public update(): void {
-        this.components.forEach((e) => e.update());
+    public update(timePassed: number): void {
+        this.components.forEach((e) => e.update(timePassed));
     }
 
     public getComponent<T extends Component>(
