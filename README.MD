@@ -1,1 +1,1 @@
-Typescript boilerplate for plain page with typescript, prettier and snowpack setup
+Bare bones entity component architecture implemented with typescript and html canvas
